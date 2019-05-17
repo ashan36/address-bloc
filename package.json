@@ -4,7 +4,7 @@
   "description": "An application to model an address book in Node",
   "main": "\u001b[B\u001b[A\u001b[Bapp.js",
   "scripts": {
-    "test": "export NODE_ENV=test && jasmine"
+    "test": "jasmine"
   },
   "author": "",
   "license": "ISC",
