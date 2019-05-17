@@ -18,4 +18,11 @@ const MenuController = require("../controllers/MenuController");
         expect(this.menu.getContactCount()).toBe(1)
       });
    });
+
+   describe('#remindeMe()', () => {
+
+     it("should return the text \"Learning is a life-long pursuit\"", () => {
+       expect(this.menu.remindMe()).toBe("Learning is a life-long pursuit");
+     });
+   });
  });
