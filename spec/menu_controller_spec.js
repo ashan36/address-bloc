@@ -22,7 +22,7 @@ const MenuController = require("../controllers/MenuController");
    describe('#remindeMe()', () => {
 
      it("should return the text \"Learning is a life-long pursuit\"", () => {
-       expect(this.menu.remindMe()).toBe("Learning is a life-long pursuit");
+       expect(this.menu.remindMe()).toContain("Learning is a life-long pursuit");
      });
    });
  });
