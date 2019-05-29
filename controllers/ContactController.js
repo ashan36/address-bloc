@@ -20,12 +20,21 @@ module.exports = class ContactController {
         validate(val){
           return val !== "";
         }
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "Contact's email address - ",
+        validate(val){
+          var pattern = RegExp('.+@[a-zA-Z]+\..+', 'g');
+          return pattern.test(val);
+        }
       }
     ];
   }
 
-  addContact(name, phone) {
-    return Contact.create({name, phone})
+  addContact(name, phone, email) {
+    return Contact.create({name, phone, email})
   }
 
 
